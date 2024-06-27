@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <h1>Каталог товаров</h1>
+        <div id="cart-counter">Корзина: <span id="cart-count">0</span></div>
+    </header>
+    <main>
+        <div class="product-grid"></div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <img id="modal-image" src="" alt="Product Image">
+            <div class="counter">
+                <button id="decrement">-</button>
+                <span id="count">1</span>
+                <button id="increment">+</button>
+            </div>
+            <button id="add-to-cart">В корзину</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
